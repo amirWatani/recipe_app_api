@@ -6,6 +6,7 @@ from django.contrib.auth import get_user_model
 from django.urls import reverse
 from django.test import Client
 
+
 class AdminSiteTests(TestCase):
     """test for django admin"""
     def setUp(self):
@@ -29,7 +30,6 @@ class AdminSiteTests(TestCase):
 
         self.assertContains(res, self.user.name)
         self.assertContains(res, self.user.email)
-
 
     def test_user_change_page(self):
         """test the edit user page work"""

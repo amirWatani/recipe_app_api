@@ -1,10 +1,11 @@
 """
 tests for models
 """
-from doctest import Example
+from doctest import Example # noqa
 
 from django.test import TestCase
 from django.contrib.auth import get_user_model
+
 
 class ModelTests(TestCase):
     """test model"""
